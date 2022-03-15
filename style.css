@@ -1,0 +1,44 @@
+body{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    align-items: stretch;
+    text-align: center;
+
+}
+
+#ClientAdd{
+    width: fit-content;
+    height: 5vh;
+    margin-bottom: 3vh;
+
+}
+
+
+.cadastroPrincipal{
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: blue;
+    margin-bottom: 10vh;
+    /* margin-left: 10%; */
+    padding: .5%;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}

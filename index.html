@@ -5,8 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Clientes</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./modal.css">
+    <script src="./scripts.js"></script>
+    
 </head>
 <body>
-    
+    <header class="cadastroPrincipal">Cadastro de Clientes</header>
+
+    <main>
+        <button type="button" id = "ClientAdd">Novo Cliente</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Celular</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Daniel exemplo</td>
+                    <td>daniel@exemplo.com</td>
+                    <td>33 999999123</td>
+                    <td>SJE</td>
+                    <td>MG</td>
+                    <td>
+                        <button type="button" id="editButton">Editar</button>
+                        <button type="button" id="removeButton">Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modalBody" id="modalBody">
+                <header id="addClientModal">
+                    <h2 id="novoClienteTXT">Novo Cliente</h2>
+                    <span class="modalExit" id="modalExit">&#10006;</span>
+                </header>
+
+                <form class="modalForm" id="modalForm">
+                    <input type="text" id="modalName" name="modalName" placeholder="Nome do Cliente">
+                    <input type="text" id="modalEmail" name="modalEmail" placeholder="Email">
+                    <input type="text" id="modalCelular" name="modalCelular" placeholder="Celular">
+                    <input type="text" id="modalCity" name="modalCity" placeholder="Cidade">
+                    <select name="modalState" id="modalState" placeholder="Estado" size="1" >
+                        <option value="MG">MG</option>
+                        <option value="SP">SP</option>
+                    </select> 
+                    <!-- Tentar fazer com Json se sobrar tempo -->
+
+
+                </form>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </main>
+
+
 </body>
 </html>

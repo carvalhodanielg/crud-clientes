@@ -1,0 +1,41 @@
+.modal{
+   position: fixed;
+
+
+   height: 100%;
+   width: 100%;
+   background: #ffffff;
+   opacity: 1;
+   z-index: 1; 
+
+   
+   margin: 0 auto;
+   width: 80vw;
+   height: 40vh;
+
+display: flex;
+flex-direction: column;
+}
+
+
+#addClientModal{
+    border: solid rgb(0, 255, 0) 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: middle;
+}
+
+
+#novoClienteTXT{
+
+    border: solid red 5px;
+    width: 80vw;
+    height: fit-content;
+    align-content: middle;
+}
+
+#modalExit{
+    border: solid red 5px;
+    height: fit-content;
+
+}
