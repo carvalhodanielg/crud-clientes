@@ -1,9 +1,9 @@
 function estados(){
     var estados =[
         {"value": "AC"
-        "Nome": "Acre"},
+        "Nome": "AC"},
         {"value": "MG"
-        "Nome": "Minas Gerais"}
+        "Nome": "MG"}
         
     ]
 }

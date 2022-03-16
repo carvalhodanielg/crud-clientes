@@ -8,16 +8,18 @@
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./modal.css">
-    <script src="./scripts.js"></script>
+    <link rel="stylesheet" href="./table.css">
+    
     
 </head>
 <body>
     <header class="cadastroPrincipal">Cadastro de Clientes</header>
 
     <main>
-        <button type="button" id = "ClientAdd">Novo Cliente</button>
+        <input type="button" id="NovoCliente" class="NovoCliente" value="Novo Cliente">
 
-        <table>
+
+        <table id="table" class="tableClass">
             <thead>
                 <tr>
                     <th>Nome</th>
@@ -41,6 +43,18 @@
                         <button type="button" id="removeButton">Remover</button>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Daniel exemplo 2</td>
+                    <td>daniel@exemplo.com</td>
+                    <td>33 999999123</td>
+                    <td>SJE</td>
+                    <td>MG</td>
+                    <td>
+                        <button type="button" id="editButton">Editar</button>
+                        <button type="button" id="removeButton">Remover</button>
+                    </td>
+                </tr>
             </tbody>
         </table>
 
@@ -52,36 +66,52 @@
                 </header>
 
                 <form class="modalForm" id="modalForm">
-                    <input type="text" id="modalName" name="modalName" placeholder="Nome do Cliente">
-                    <input type="text" id="modalEmail" name="modalEmail" placeholder="Email">
-                    <input type="text" id="modalCelular" name="modalCelular" placeholder="Celular">
-                    <input type="text" id="modalCity" name="modalCity" placeholder="Cidade">
-                    <select name="modalState" id="modalState" placeholder="Estado" size="1" >
-                        <option value="MG">MG</option>
-                        <option value="SP">SP</option>
-                    </select> 
-                    <!-- Tentar fazer com Json se sobrar tempo -->
+                    <!-- <div class="modalFormInput"> -->
+                        <input type="text" id="modalName" name="modalName" placeholder="Nome do Cliente">
+                    <!-- </div> -->
 
+                            <div class="break"> </div>
+
+                    <!-- <div class="modalFormInput"></div> -->
+                        <input type="text" id="modalEmail" name="modalEmail" placeholder="Email">
+                    <!-- </div> -->
+
+                            <div class="break"> </div>
+
+                    <!-- <div class="modalFormInput"></div> -->
+                        <input type="text" id="modalCelular" name="modalCelular" placeholder="Celular">
+                    <!-- </div> -->
+
+                            <div class="break"> </div>
+
+                    <div class="modalFormInput">
+                        <input type="text" id="modalCity" name="modalCity" placeholder="Cidade">
+                        <select name="modalState" id="modalState" placeholder="Estado" size="1" >
+                            <option value="MG">MG</option>
+                            <option value="SP">SP</option>
+                        </select> 
+                        <!-- Tentar fazer com Json se sobrar tempo -->
+                    </div>
 
                 </form>
 
-
+                <footer class="modalFooter">
+                    <button id="modalSave" name="modalSave">Salvar</button>
+                    <button id="modalEdit" name="modalEdit">Editar</button>
+                </footer>
 
             </div>
 
-
-
-
-
-
-
         </div>
-
-
-
 
     </main>
 
+    <footer>
+        <p>Developed by <a href="https://github.com/carvalhodanielg">Daniel Carvalho</a>  | 2022</p>
+    </footer>
+
 
 </body>
+
+<script src="./scripts.js"></script>
 </html>

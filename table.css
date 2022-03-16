@@ -1,0 +1,29 @@
+.tableClass{
+    text-align: left;
+    
+}
+
+.tableClass th{
+    background-color: rgb(24, 135, 231);
+    color: white;
+}
+
+.tableClass td{
+    background-color: rgb(255, 255, 255);
+}
+
+.tableClass th:last-child,
+.tableClass td:last-child{
+    text-align: center;
+}
+
+
+.tableClass th:nth-last-child(2),
+.tableClass td:nth-last-child(2){
+    text-align: center;
+}
+
+.tableClass th:nth-last-child(3),
+.tableClass td:nth-last-child(3){
+    width: 20vw;
+}

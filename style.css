@@ -12,14 +12,18 @@ body{
 
 main{
     display: flex;
+    background-color: azure;
     flex-direction: column;
     width: 80vw;
     align-items: stretch;
     text-align: center;
+    border: solid 1px red;
+    min-height: 60vh;
+    padding: 1%;
 
 }
 
-#ClientAdd{
+#NovoCliente{
     width: fit-content;
     height: 5vh;
     margin-bottom: 3vh;
@@ -42,3 +46,4 @@ main{
     color: white;
     font-size: 2rem;
 }
+
