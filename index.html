@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Clientes</title>
+    <link rel="shortcut icon" type="imagex/png" href="./images/associese-azul.ico">
 
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./modal.css">
@@ -17,6 +18,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
     
     
 </head>
@@ -25,7 +28,6 @@
 
     <main>
         <input type="button" id="NovoCliente" class="NovoCliente" value="Novo Cliente">
-
 
         <table id="table" class="tableClass">
             <thead>
@@ -74,34 +76,46 @@
                 </header>
 
                 <form class="modalForm" id="modalForm">
-                    <!-- <div class="modalFormInput"> -->
+
                         <input type="text" id="modalName" name="modalName" placeholder="Nome do Cliente" class="modalInputs" required>
-                    <!-- </div> -->
-
                             <div class="break"> </div>
-
-                    <!-- <div class="modalFormInput"></div> -->
                         <input type="text" id="modalEmail" name="modalEmail" placeholder="Email" class="modalInputs" required>
-                    <!-- </div> -->
-
                             <div class="break"> </div>
-
-                    <!-- <div class="modalFormInput"></div> -->
                         <input type="text" id="modalCelular" name="modalCelular" placeholder="Celular" class="modalInputs" required>
-                    <!-- </div> -->
-
                             <div class="break"> </div>
 
                     <div class="modalFormInput">
                         <input type="text" id="modalCity" name="modalCity" placeholder="Cidade" class="modalInputs" required>
                         <select name="modalState" id="modalState" placeholder="Estado" size="1" class="modalInputs" required>
                             <option value=" "> </option>
+                            <option value="AL">AL</option>
+                            <option value="AP">AP</option>
+                            <option value="AM">AM</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MT">MT</option>
+                            <option value="MS">MS</option>
                             <option value="MG">MG</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PR">PR</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RS">RS</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="SC">SC</option>
                             <option value="SP">SP</option>
+                            <option value="SE">SE</option>
+                            <option value="TO">TO</option>
                         </select> 
-                        <!-- Tentar fazer com Json se sobrar tempo -->
                     </div>
-
                 </form>
 
                 <footer class="modalFooter">
@@ -110,7 +124,6 @@
                 </footer>
 
             </div>
-
         </div>
 
         <div class="fundo"> </div>

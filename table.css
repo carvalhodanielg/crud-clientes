@@ -1,8 +1,6 @@
 .tableClass{
     text-align: left;
-    /* font-family: sans-serif; */
     font-family: 'Open Sans', sans-serif;
-    
  }
 
 .tableClass th{
@@ -34,9 +32,6 @@
 }
 
 .editButton, .removeButton{
-    /* background-color: whitesmoke;
-    border: solid rgb(177, 177, 177) .1px; */
-
     background-color: transparent;
     border: transparent;
     font-weight: bold;

@@ -30,7 +30,6 @@ const createClient = (client) => {
     const dbClient = getLocalStorage()
     dbClient.push(client)
     setLocalStorage(dbClient)
-
 }
 
 const isValidFields = () => {
@@ -67,10 +66,7 @@ const saveClient = () => {
             closeModal()
         }
 
-
-
     }
-
 }
 
 const newRow = (client, index) => {
@@ -89,16 +85,12 @@ const newRow = (client, index) => {
     
         `
         document.querySelector('#table>tbody').appendChild(newRowInside)
-    
 }
     
-
-
 const clearTable = () => {
     const rows = document.querySelectorAll('#table>tbody tr')
     rows.forEach(row => row.parentNode.removeChild(row))
 }
-
 
 const updateTable = () => {
     const dbClient = getLocalStorage();
@@ -106,33 +98,21 @@ const updateTable = () => {
     dbClient.forEach(newRow)
 }
 
-
 const fillFields = (client) => {
     document.getElementById('modalName').value = client.nome
     document.getElementById('modalEmail').value = client.email
     document.getElementById('modalCelular').value = client.celular
     document.getElementById('modalCity').value = client.cidade
     document.getElementById('modalState').value = client.estado
-
     document.getElementById('modalName').dataset.index = client.index
-
 }
-
-
-
-
 
 const editClient = (index) => {
     const client = getLocalStorage()[index]
- 
     client.index = index
     fillFields(client)
     openModal()
 }
-
-
-
-
 
 const editDelete = (event) => {
     if (event.target.type  == 'button'){
@@ -150,7 +130,6 @@ const editDelete = (event) => {
             }
         }
     }
-
 }
 
 updateTable()
