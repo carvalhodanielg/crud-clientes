@@ -1,15 +1,20 @@
 .tableClass{
     text-align: left;
+    /* font-family: sans-serif; */
+    font-family: 'Open Sans', sans-serif;
     
-}
+ }
 
 .tableClass th{
-    background-color: rgb(24, 135, 231);
+    background-color: rgb(20, 19, 19);
     color: white;
+    border: solid 1px black;
 }
 
 .tableClass td{
     background-color: rgb(255, 255, 255);
+    border: solid .5px grey;
+    padding: .5%;
 }
 
 .tableClass th:last-child,
@@ -26,4 +31,26 @@
 .tableClass th:nth-last-child(3),
 .tableClass td:nth-last-child(3){
     width: 20vw;
+}
+
+.editButton, .removeButton{
+    /* background-color: whitesmoke;
+    border: solid rgb(177, 177, 177) .1px; */
+
+    background-color: transparent;
+    border: transparent;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.editButton:hover{
+    background-color: rgb(50, 54, 241);
+    color: white;
+    border: solid rgb(177, 177, 177) .1px;
+}
+
+.removeButton:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: solid rgb(177, 177, 177) .1px;
 }

@@ -1,7 +1,6 @@
 .modal{
     position: relative;
-    top: -50px;
-
+    bottom: 20vh;
     height: 100%;
     width: 100%;
     background: #ffffff;
@@ -12,7 +11,7 @@
     
     margin: 0 auto;
     width: 60vw;
-    height: 50vh;
+    height: 60vh;
     min-height: fit-content;
 
     /* display: flex; */
@@ -27,7 +26,7 @@
 }
 
 .active + .fundo{
-    background: rgba(0, 0, 0, 0.527);
+    background: rgba(0, 0, 0, 0.712);
     position: fixed;
     right: 0;
     left: 0;
@@ -46,6 +45,7 @@
     width: 80vw;
     height: fit-content;
     align-content: middle;
+    font-family: 'Fjalla One', sans-serif
 }
 
 #modalExit{
@@ -101,4 +101,21 @@
 
 #modalSave, #modalEdit{
     margin: 0 5px;
+}
+
+#modalEdit, #modalSave{
+    background-color: transparent;
+    border: .1px solid grey;
+}
+
+#modalEdit:hover{
+    background-color: red;
+    color: white;
+    border: .1px solid grey;
+}
+
+#modalSave:hover{
+    background-color: green;
+    color: white;
+    border: .1px solid grey;
 }
