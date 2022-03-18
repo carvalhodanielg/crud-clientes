@@ -7,15 +7,10 @@ const closeModal = () => {
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_Client')) ?? []  //armazenar o que está no local storage, se estiver vazio retorna uma string vazia, e transforma a string em JSON
 
+
+
 const setLocalStorage = (dbClient) => localStorage.setItem("db_Client",JSON.stringify(dbClient))
 
-// const tempClient = {
-//     nome: "rael",
-//     email: "armado@belfordroxo.com",
-//     celular: "33 9 9990 0000",
-//     cidade: "Belford roxo",
-//     estado: "mg"
-// }
 
 const deleteClient = (index) => {
     const dbClient = getLocalStorage()
@@ -168,5 +163,7 @@ document.getElementById('modalSave').addEventListener('click', (e)=> {
     e.preventDefault()
     saveClient()
 })
+
+document.getElementById('modalEdit').addEventListener('click',closeModal)
 
 document.querySelector('#table>tbody').addEventListener('click', editDelete)

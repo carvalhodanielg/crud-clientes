@@ -1,6 +1,6 @@
 .modal{
-    position: fixed;
-
+    position: relative;
+    top: -50px;
 
     height: 100%;
     width: 100%;
@@ -11,19 +11,29 @@
     padding-right: 2%;
     
     margin: 0 auto;
-    width: 80vw;
-    height: 60vh;
+    width: 60vw;
+    height: 50vh;
     min-height: fit-content;
 
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
+    border: solid rgb(0, 0, 0) 1px;
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, 0.616);
 }
 
 .active{
-    opacity: 1;
-    z-index: 1;   
+    opacity: 2;
+    z-index: 2; 
 }
 
+.active + .fundo{
+    background: rgba(0, 0, 0, 0.527);
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
 
 #addClientModal{
     display: flex;
